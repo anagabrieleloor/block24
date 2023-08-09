@@ -14,15 +14,16 @@ function App() {
   console.log("puppyList: ", puppyList);
 
   return (
-    <div className="App">
+    <div className="App"> <h1>✩ ° ｡Puppy Pals｡ ° ✩</h1>
       {
         puppies.map((puppy) => {
-             return <p onClick={()=>{ setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p>;
+          
+             return  <p onClick={()=>{ setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p>;
            })
        }
              {featPupId && (
         <div className="Feat">
-          <h2>{featuredPup.name}</h2>
+          <h2>✩{featuredPup.name}✩</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
             <li>Email: {featuredPup.email}</li>
